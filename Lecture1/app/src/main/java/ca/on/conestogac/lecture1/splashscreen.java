@@ -111,14 +111,10 @@ public class splashscreen extends AppCompatActivity {
         findViewById(R.id.dummy_button).setOnTouchListener(mDelayHideTouchListener);
     }
 
-    /** Called when the user taps the Send button */
+    /** Called when user taps the splashscreen button */
     public void navigateToMain(View view) {
-
         Intent intent = new Intent(this, MainActivity.class);
-//        EditText editText = (EditText) findViewById(R.id.editText);
-//        String message = editText.getText().toString();
-//        String message = "Hello World";
-//        intent.putExtra(EXTRA_MESSAGE, message);
+        //Launch the Main activity
         startActivity(intent);
     }
     @Override
